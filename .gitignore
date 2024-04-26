@@ -130,3 +130,6 @@ dist
 .pnp.*
 
 gulp/version.json
+
+/dist
+.idea
