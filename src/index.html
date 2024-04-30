@@ -4,7 +4,88 @@
 <body>
     @@include("templates/header.html")
     <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="container">
+                    <div class="hero__grid">
+                        <div class="hero__col">
+                            <div class="hero__title-wrapper">
+                                <div class="hero__title title-h1">Откройте дверь к здоровому образу жизни</div>
+                                <p class="hero__desc">текст текст текст</p>
+                            </div>
+                            <div class="hero__info-grid">
+                                <div class="hero__info-col">
+                                    <a href="#" class="hero__button button">Выбрать программу</a>
+                                    <div class="hero__menu-wrapper">
+                                        <div class="hero__menu-title title-h2">Меню</div>
+                                        <p class="hero__menu-desc">Наслаждайтесь свежими и полезными блюдами прямо у себя дома!</p>
+                                    </div>
+                                </div>
+                                <div class="hero__info-col">
+                                    <div class="hero__discount-wrapper">
+                                        <div class="hero__discount-title title-h2">20% скидка</div>
+                                        <p class="hero__discount-desc">При первом заказе</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__col">
+                            <div class="hero__swiper swiper">
+                                <div class="hero__swiper-wrapper swiper-wrapper">
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <div class="hero__swiper-thumbnail">
+                                            <img src="" alt="">
+                                            <div class="hero__swiper-thumbnail-desc">
+                                                <p class="hero__swiper-thumbnail-title">Цезарь с курицей</p>
+                                                <div class="hero__swiper-thumbnail-text">БЖУ 23, 33, 4</div>
+                                            </div>
+                                        </div>
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <div class="hero__swiper-thumbnail">
+                                            <img src="" alt="">
+                                            <div class="hero__swiper-thumbnail-desc">
+                                                <p class="hero__swiper-thumbnail-title">Цезарь с курицей</p>
+                                                <div class="hero__swiper-thumbnail-text">БЖУ 23, 33, 4</div>
+                                            </div>
+                                        </div>
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <div class="hero__swiper-thumbnail">
+                                            <img src="" alt="">
+                                            <div class="hero__swiper-thumbnail-desc">
+                                                <p class="hero__swiper-thumbnail-title">Цезарь с курицей</p>
+                                                <div class="hero__swiper-thumbnail-text">БЖУ 23, 33, 4</div>
+                                            </div>
+                                        </div>
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                                <div class="hero__swiper-button-prev swiper-button-prev"></div>
+                                <div class="hero__swiper-button-prev swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="programs">
+            <div class="programs__container">
+                <div class="container">
+                    <div class="programs__title-grid">
+                        <div class="programs__title">Программы</div>
+                        <div class="programs__buttons-wrapper">
+                            <a href="javascript:;" data-tab-id="tab_1" class="programs__button button">Женский</a>
+                            <a href="javascript:;" data-tab-id="tab_2" class="programs__button button">Мужской</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
     @@include("templates/footer.html")
 </body>
