@@ -1,0 +1,29 @@
+.programs {
+  &__container {
+  }
+
+  &__wrapper {
+  }
+
+  &__title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: clamp(25px, 0.982rem + 1.786vw, 50px);
+  }
+
+  &__title {
+  }
+
+  &__buttons-wrapper {
+  }
+
+  &__button {
+    width: 263px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 43px;
+  }
+}

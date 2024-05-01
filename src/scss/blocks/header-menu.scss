@@ -1,0 +1,18 @@
+.header-menu {
+  display: flex;
+  gap: 60px;
+
+  @media (max-width: 1700px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 1400px) {
+    gap: 10px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}

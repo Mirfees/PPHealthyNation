@@ -1,0 +1,16 @@
+.header-auth {
+  &__container {
+    display: flex;
+    gap: 40px;
+    @media (max-width: 1700px) {
+      gap: 20px;
+    }
+
+    @media (max-width: 1400px) {
+      gap: 10px;
+    }
+  }
+
+  &__button {
+  }
+}

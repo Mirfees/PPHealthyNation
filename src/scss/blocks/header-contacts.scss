@@ -1,0 +1,22 @@
+.header-contacts {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  
+  @media (max-width: 1700px) {
+    gap: 10px;
+  }
+
+  @media (max-width: 1400px) {
+    gap: 5px;
+  }
+
+  &__phone {
+  }
+
+  &__media-grid {
+  }
+
+  &__icon {
+  }
+}
