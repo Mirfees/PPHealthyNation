@@ -303,50 +303,74 @@
                     <div class="calculator__wrapper">
                         <div class="calculator__title title-h2">Калькулятор БЖУ</div>
                         <form method="post" action="" class="calculator__grid">
-                            <div class="calculator-card">
-                                <div class="calculator-card__title title-h3">Выберите Ваш пол</div>
-                                <input type="radio" name="gender" id="woman">
-                                <label for="woman">Женский</label>
-                                <input type="radio" name="gender" id="man">
-                                <label for="man">Мужской</label>
-                            </div>
-                            <div class="calculator-card">
-                                <div class="calculator-card__title title-h3">Введите Ваши данные</div>
+                            <div class="calculator-card calculator-card_type_gender green-bg">
+                                <div class="calculator-card__title">Выберите <br> Ваш пол</div>
                                 <div class="calculator-card__value-wrapper">
                                     <div class="calculator-card__row">
-                                        <div class="calculator-card__label">Рост</div>
-                                        <input type="text" class="calculator-card__input">
+                                        <input type="radio" name="gender" id="woman">
+                                        <label for="woman">Женский</label>
                                     </div>
                                     <div class="calculator-card__row">
-                                        <div class="calculator-card__label">Вес</div>
-                                        <input type="text" class="calculator-card__input">
-                                    </div>
-                                    <div class="calculator-card__row">
-                                        <div class="calculator-card__label">Возраст</div>
-                                        <input type="text" class="calculator-card__input">
+                                        <input type="radio" name="gender" id="man">
+                                        <label for="man">Мужской</label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="calculator-card">
-                                <div class="calculator-card__title title-h3">Уровень активности</div>
-                                <input type="radio" name="activity_level" id="low">
-                                <label for="low">Низкий</label>
-                                <input type="radio" name="activity_level" id="middle">
-                                <label for="middle">Средний</label>
-                                <input type="radio" name="activity_level" id="high">
-                                <label for="high">Высокий</label>
+                            <div class="calculator-card calculator-card_type_data pink-bg">
+                                <div class="calculator-card__title">Введите <br> Ваши данные</div>
+                                <div class="calculator-card__value-wrapper">
+                                    <div class="calculator-card__row">
+                                        <div class="calculator-card__label">Рост</div>
+                                        <input placeholder="174 см" type="text" class="calculator-card__input">
+                                    </div>
+                                    <div class="calculator-card__row">
+                                        <div class="calculator-card__label">Вес</div>
+                                        <input placeholder="175 кг" type="text" class="calculator-card__input">
+                                    </div>
+                                    <div class="calculator-card__row">
+                                        <div class="calculator-card__label">Возраст</div>
+                                        <input placeholder="12 лет" type="text" class="calculator-card__input">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="calculator-card">
-                                <div class="calculator-card__title title-h3">Выберите Вашу цель</div>
-                                <input type="radio" name="activity_level" id="low">
-                                <label for="low">Низкий</label>
-                                <input type="radio" name="activity_level" id="middle">
-                                <label for="middle">Средний</label>
-                                <input type="radio" name="activity_level" id="high">
-                                <label for="high">Высокий</label>
+                            <div class="calculator-card calculator-card_type_activity yellow-bg">
+                                <div class="calculator-card__title">Уровень активности</div>
+                                <div class="calculator-card__value-wrapper">
+                                    <div class="calculator-card__row">
+                                        <input type="radio" name="activity_level" id="low">
+                                        <label for="low">Низкий</label>
+                                    </div>
+                                    <div class="calculator-card__row">
+                                        <input type="radio" name="activity_level" id="middle">
+                                        <label for="middle">Средний</label>
+                                    </div>
+                                    <div class="calculator-card__row">
+                                        <input type="radio" name="activity_level" id="high">
+                                        <label for="high">Высокий</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-card calculator-card_type_target blue-bg">
+                                <div class="calculator-card__title">Выберите <br> Вашу цель</div>
+                                <div class="calculator-card__value-wrapper">
+                                    <div class="calculator-card__row">
+                                        <input type="radio" name="target" id="less">
+                                        <label for="less">Похудение</label>
+                                    </div>
+                                    <div class="calculator-card__row">
+                                        <input type="radio" name="target" id="balance">
+                                        <label for="balance">Баланс</label>
+                                    </div>
+                                    <div class="calculator-card__row">
+                                        <input type="radio" name="target" id="gain">
+                                        <label for="gain">Набор веса</label>
+                                    </div>
+                                </div>
                             </div>
                         </form>
-                        <a href="javascript:;" class="calculator__button button">Рассчитать оптимальную программу</a>
+                        <div class="calculator__button-wrapper">
+                            <a href="javascript:;" class="calculator__button button">Рассчитать оптимальную программу</a>
+                        </div>
                     </div>
                 </div>
             </div>

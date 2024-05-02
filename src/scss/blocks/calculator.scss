@@ -1,0 +1,38 @@
+.calculator {
+
+    &__container {
+        @include section-margin-bottom;
+    }
+
+    &__wrapper {
+    }
+
+    &__title {
+        margin-bottom: clamp(25px, 0.982rem + 1.786vw, 50px);
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+        margin-bottom: clamp(20px, 0.786rem + 1.429vw, 40px);
+
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 600px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    &__button-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        font-size: clamp(13px, 0.511rem + 0.929vw, 26px);
+        font-weight: 600;
+    }
+}

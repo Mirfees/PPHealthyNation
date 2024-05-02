@@ -1,0 +1,94 @@
+.calculator-card {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(20px, 0.786rem + 1.429vw, 40px);
+    border-radius: clamp(10px, 0.416rem + 0.643vw, 19px);
+    font-style: italic;
+
+    @media (max-width: 1200px) {
+        height: 260px;
+    }
+
+    &__title {
+        font-size: clamp(15px, 0.589rem + 1.071vw, 30px);
+        font-style: italic;
+        font-weight: 600;
+        margin-bottom: clamp(16px, 0.629rem + 1.143vw, 32px);
+    }
+
+    &__value-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(10px, 0.393rem + 0.714vw, 20px);
+    }
+
+    &__row {
+    }
+
+    &__label {
+        margin-bottom: clamp(10px, 0.393rem + 0.714vw, 20px);
+    }
+
+    &__input {
+        max-width: 203px;
+        text-align: center;
+    }
+
+    &_type {
+        &_gender {
+            background-image: url("../img/gender.png");
+            background-position: bottom left;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1700px) {
+                background-size: 90%;
+            }
+
+            @media (max-width: 1200px) {
+                background-size: 60%;
+            }
+
+            @media (max-width: 600px) {
+                background-size: 43%;
+            }
+        }
+
+        &_data {
+            background-image: url("../img/meter.png");
+            background-position: bottom right;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1700px) {
+                background-size: 40%;
+            }
+        }
+
+        &_activity {
+            background-image: url("../img/battery.png");
+            background-position: bottom right;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1700px) {
+                background-size: 90%;
+            }
+
+            @media (max-width: 1200px) {
+                background-size: 60%;
+            }
+        }
+
+        &_target {
+            background-image: url("../img/scale.png");
+            background-position: bottom right;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1700px) {
+                background-size: 90%;
+            }
+
+            @media (max-width: 1200px) {
+                background-size: 60%;
+            }
+        }
+    }
+}
