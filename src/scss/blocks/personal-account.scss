@@ -1,0 +1,43 @@
+.personal-account {
+  &__container {
+    @include section-margin-bottom;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: auto 57.4%;
+    grid-gap: clamp(40px, 0.411rem + 6.429vw, 130px);
+
+    @media (max-width: 820px) {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+  }
+
+  &__title {
+  }
+
+  &__desc {
+    max-width: 504px;
+    font-weight: 600;
+  }
+
+  &__button {
+    max-width: 508px;
+  }
+
+  &__image {
+    background-color: #C5E2A3;
+    background-image: url("../img/mask-bg-4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: clamp(20px, 0.786rem + 1.429vw, 40px) clamp(10px, 0.393rem + 0.714vw, 20px);
+    border-radius: 8px;
+
+  }
+}
