@@ -1,31 +1,210 @@
 .program-card {
+  &_type {
+    &_harmony {
+      .program-card__wrapper {
+        background-color: #C5E2A3;
+        background-image: url(../img/woman-1.png), url(../img/mask-bg-1.png);
+        background-repeat: no-repeat ,no-repeat;
+        background-position: bottom right, bottom center;
+        background-size: auto, contain;
+        height: 1096px;
+
+        @media (max-width: 1700px) {
+          background-size: 70%, auto;
+        }
+
+        @media (max-width: 1500px) {
+          height: 796px;
+          background-size: 48%, auto;
+        }
+
+        @media (max-width: 890px) {
+          height: auto;
+          background-image: url(../img/mask-bg-1.png);
+          background-repeat: no-repeat;
+          background-position: bottom center;
+          background-size: cover;
+        }
+      }
+    }
+
+    &_energy {
+      .program-card__wrapper {
+        background-color: #DBE5FF;
+        background-image: url(../img/mask-bg-2.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        height: 869px;
+
+        @media (max-width: 1500px) {
+          height: 596px;
+        }
+
+        @media (max-width: 890px) {
+          height: auto;
+          background-image: url(../img/mask-bg-3.png);
+          background-repeat: no-repeat;
+          background-position: bottom center;
+          background-size: cover;
+        }
+      }
+    }
+
+    &_fat {
+      .program-card__wrapper {
+        background-color: #FFF5DB;
+        background-image: url(../img/salad-2.png), url(../img/mask-bg-3.png);
+        background-repeat: no-repeat ,no-repeat;
+        background-position: bottom right, bottom center;
+        background-size: auto, contain;
+        height: 869px;
+
+        @media (max-width: 1500px) {
+          height: 596px;
+          background-size: 48%, auto;
+        }
+
+        @media (max-width: 890px) {
+          height: auto;
+          background-image: url(../img/mask-bg-3.png);
+          background-repeat: no-repeat;
+          background-position: bottom center;
+          background-size: cover;
+        }
+      }
+    }
+
+    &_taste {
+      .program-card__wrapper {
+        background-color: #FFDBEC;
+        background-image: url(../img/woman-2.png), url(../img/mask-bg-1.png);
+        background-repeat: no-repeat ,no-repeat;
+        background-position: bottom right, bottom center;
+        background-size: auto, contain;
+        height: 1096px;
+
+        @media (max-width: 1700px) {
+          background-size: 70%, auto;
+        }
+
+        @media (max-width: 1500px) {
+          height: 796px;
+          background-size: 48%, auto;
+        }
+
+        @media (max-width: 890px) {
+          height: auto;
+          background-image: url(../img/mask-bg-1.png);
+          background-repeat: no-repeat;
+          background-position: bottom center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
   &__form {
   }
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 0.589rem + 1.071vw, 30px);
+    padding: clamp(20px, 0.786rem + 1.429vw, 40px);
+    border-radius: clamp(12px, 0.471rem + 0.857vw, 24px);
   }
 
   &__info {
   }
 
   &__title {
+    margin-bottom: clamp(10px, 0.393rem + 0.714vw, 20px);
   }
 
   &__desc {
   }
 
+  &__days-wrapper {
+  }
+
+  &__days-title {
+    margin-bottom: clamp(10px, 0.393rem + 0.714vw, 20px);
+    font-style: italic;
+    font-weight: 500;
+    text-align: left;
+  }
+
   &__days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, 0.393rem + 0.714vw, 20px);
+
+    label > input:checked + div {
+      color: #fff;
+      border: 2px #fff solid;
+      background-color: #2D404E;
+    }
+
+    input {
+      display: none;
+    }
+
+    @media (max-width: 520px) {
+      flex-direction: column;
+      
+    }
+  }
+
+  &__days-text {
+    width: 161px;
+    padding: clamp(8px, 0.314rem + 0.571vw, 16px) clamp(13px, 0.511rem + 0.929vw, 26px);
+    border: 2px solid #2D404E;
+    border-radius: 50px;
+    text-align: center;
+    font-size: clamp(10px, 0.439rem + 0.571vw, 18px);
+    font-style: italic;
+
+    transition-duration: 0.2s;
+    transition-property: border, color, background-color;
+    transition-timing-function: ease-in;
+
+    &:hover {
+      color: #fff;
+      border: 2px #fff solid;
+      background-color: #2D404E;
+    }
+  
+    @media (max-width: 520px) {
+      width: 100%; 
+    }
+
   }
 
   &__calories-wrapper {
   }
 
   &__calories-title {
+    margin-bottom: clamp(10px, 0.393rem + 0.714vw, 20px);
   }
 
   &__calories-values {
+    label {
+      font-style: italic;
+      font-weight: 500;
+
+      &:not(:last-child) {
+        margin-right: clamp(10px, 0.393rem + 0.714vw, 20px);
+      }
+    }
   }
 
   &__button {
+    font-size: clamp(13px, 0.511rem + 0.929vw, 26px);
+    width: 374px;
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
   }
 }

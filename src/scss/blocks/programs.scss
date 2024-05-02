@@ -1,5 +1,6 @@
 .programs {
   &__container {
+    @include section-margin-bottom;
   }
 
   &__wrapper {
@@ -7,7 +8,9 @@
 
   &__title-wrapper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 15px;
     margin-bottom: clamp(25px, 0.982rem + 1.786vw, 50px);
   }
 
@@ -15,15 +18,31 @@
   }
 
   &__buttons-wrapper {
+    display: flex;
+    gap: clamp(10px, 0.393rem + 0.714vw, 20px);
   }
 
   &__button {
     width: 263px;
+
+    @media (max-width: 768px) {
+      width: fit-content;
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 43px;
+    grid-gap: clamp(20px, 0.786rem + 1.429vw, 43px);
+
+    @media (max-width: 890px) {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 0.786rem + 1.429vw, 43px);
   }
 }

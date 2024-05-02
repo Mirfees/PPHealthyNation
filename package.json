@@ -36,7 +36,7 @@
         "mapbox-gl": "^2.8.1",
         "sass": "^1.49.7",
         "slick-carousel": "^1.8.1",
-        "swiper": "^8.1.0",
+        "swiper": "^8.4.7",
         "webp-converter": "^2.2.3",
         "webpack": "^5.70.0",
         "webpack-stream": "^7.0.0"
