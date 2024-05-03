@@ -3,7 +3,7 @@
   gap: 60px;
 
   @media (max-width: 1700px) {
-    gap: 30px;
+    gap: clamp(15px, 0.589rem + 1.071vw, 30px);
   }
 
   @media (max-width: 1400px) {

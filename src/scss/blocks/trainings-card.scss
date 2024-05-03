@@ -1,0 +1,116 @@
+.trainings-card {
+  &_type {
+    &_light {
+      .trainings-card__wrapper {
+        background-image: url("../img/woman-3.png");
+
+        @media (max-width: 700px) {
+          background-image: unset;
+        }
+      }
+    }
+
+    &_middle {
+      .trainings-card__wrapper {
+        background-image: url("../img/woman-4.png");
+
+        @media (max-width: 700px) {
+          background-image: unset;
+        }
+      }
+    }
+
+    &_hard {
+      .trainings-card__wrapper {
+        background-image: url("../img/woman-5.png");
+
+        @media (max-width: 700px) {
+          background-image: unset;
+        }
+      }
+    }
+  }
+  &__wrapper {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: clamp(20px, 0.786rem + 1.429vw, 40px);
+    border-radius: clamp(12px, 0.471rem + 0.857vw, 24px);
+
+    @media (max-width: 1700px) {
+      background-size: 35%;
+    }
+
+    @media (max-width: 1200px) {
+      background-size: contain;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 0.589rem + 1.071vw, 30px);
+    max-width: 485px;
+
+    @media (max-width: 1400px) {
+      max-width: 470px;
+    }
+  }
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+  }
+
+  &__lights-wrapper {
+    display: flex;
+    align-items: center;
+    gap: clamp(15px, 0.589rem + 1.071vw, 30px);
+
+    img {
+      height: 33.04px;
+      width: 25px;
+    }
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 0.393rem + 0.714vw, 20px);
+  }
+
+  &__list-title {
+    font-weight: 500;
+
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &::before {
+      content: url("../img/disk.svg");
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 0.393rem + 0.714vw, 20px);
+
+    &_exclamation {
+      .trainings-card__item {
+        &::before {
+          content: url("../img/info-circle.svg");
+        }
+      }
+    }
+  }
+
+
+
+  &__button {
+  }
+}

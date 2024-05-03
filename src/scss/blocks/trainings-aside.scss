@@ -1,0 +1,71 @@
+.trainings-aside {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 0.589rem + 1.071vw, 30px);
+    padding: clamp(20px, 0.786rem + 1.429vw, 40px);
+    border-radius: clamp(12px, 0.471rem + 0.857vw, 24px);
+    background-color: #48874E;
+    color: #fff;
+
+    input,
+    textarea {
+      border: 2px solid #fff;
+      color: #fff;
+      width: 100%;
+    }
+
+    textarea {
+      padding: clamp(8px, 0.314rem + 0.571vw, 16px) clamp(13px, 0.511rem + 0.929vw, 26px);
+    }
+
+    @media (max-width: 1200px) {
+      align-items: center;
+    }
+  }
+
+  &__row {
+    max-width: 404px;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: clamp(10px, 0.393rem + 0.714vw, 20px);
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+
+  &__label {
+    margin-bottom: clamp(10px, 0.393rem + 0.714vw, 20px);
+  }
+
+  &__button {
+    min-width: 374px;
+    padding: clamp(12px, 0.471rem + 0.857vw, 24px) clamp(13px, 0.511rem + 0.929vw, 26px);
+    font-size: clamp(13px, 0.511rem + 0.929vw, 26px);
+    font-weight: 600;
+    margin-bottom: clamp(10px, 0.393rem + 0.714vw, 20px);
+    border: 2px solid #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: $textColor;
+    }
+
+    @media (max-width: 1400px) {
+      min-width: unset;
+      width: 100%;
+    }
+  }
+
+  &__privacy-policy {
+    display: block;
+    font-size: clamp(8px, 0.314rem + 0.571vw, 16px);
+    opacity: 0.6;
+  }
+}

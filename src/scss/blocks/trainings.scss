@@ -1,0 +1,33 @@
+.trainings {
+  &__container {
+    @include section-margin-bottom;
+  }
+
+  &__wrapper {
+  }
+
+  &__title {
+    margin-bottom: clamp(25px, 0.982rem + 1.786vw, 50px);
+  }
+
+  &__grid {
+    display: grid;
+    gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+    grid-template-columns: auto 40.33%;
+
+    @media (max-width: 1400px) {
+      grid-template-columns: auto 33.33%;
+    }
+
+    @media (max-width: 1200px) {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__col {
+    &:first-child {
+      display: grid;
+      grid-gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+    }
+  }
+}

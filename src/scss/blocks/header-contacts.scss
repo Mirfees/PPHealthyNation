@@ -1,6 +1,6 @@
 .header-contacts {
   display: flex;
-  gap: 20px;
+  gap: clamp(10px, 0.393rem + 0.714vw, 20px);
   align-items: center;
   
   @media (max-width: 1700px) {
