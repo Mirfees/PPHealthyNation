@@ -7,6 +7,7 @@
 @import "typography";
 
 @import "blocks/header";
+@import "blocks/burger-menu";
 @import "blocks/header-contacts";
 @import "blocks/header-menu";
 @import "blocks/header-auth";
@@ -20,3 +21,9 @@
 @import "blocks/trainings-card";
 @import "blocks/trainings-aside";
 @import "blocks/about-us";
+@import "blocks/footer";
+@import "blocks/footer-bottom";
+@import "blocks/footer-media";
+
+@import "blocks/auth-block";
+@import "blocks/auth-form";

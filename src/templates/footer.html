@@ -1,8 +1,4 @@
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/lazyload.min.js"></script>
-<script src="js/fancybox.umd.js"></script>
-<script src="js/script.js"></script>
-
+@@include('scripts.html')
 
 <footer class="footer">
     <div class="footer__container">
@@ -12,10 +8,12 @@
                     <div class="footer__col">
                         <div class="footer__logo">
                             <div class="footer__logo-wrapper">
-                                <img src="img/logo-white.svg" alt="">
+                                <a href="#">
+                                    <img src="img/logo-white.svg" alt="">
+                                </a>
                             </div>
                             <p class="footer__text">
-                                Присоединяйтесь прямо сейчас и получите 2-дневный пробный пакет с нашими вкусными и готовыми блюдами! Зарегистрируйтесь сегодня, чтобы начать путь к здоровому образу жизни.
+                                <a href="#">Присоединяйтесь прямо сейчас и получите 2-дневный пробный пакет с нашими вкусными и готовыми блюдами! Зарегистрируйтесь сегодня, чтобы начать путь к здоровому образу жизни.</a>
                             </p>
                         </div>
                         <div class="footer__media-wrapper">
@@ -51,20 +49,24 @@
                     <div class="footer__col">
                         <div class="footer__menu-title">Карта сайта</div>
                         <div class="footer__menu-grid">
-                            <a href="#" class="footer__menu-link">Главная</a>
-                            <a href="#" class="footer__menu-link">Программы</a>
-                            <a href="#" class="footer__menu-link">Тренировки</a>
-                            <a href="#" class="footer__menu-link">Меню</a>
-                            <a href="#" class="footer__menu-link">Калькулятор БЖУ</a>
-                            <a href="#" class="footer__menu-link">О нас</a>
-                            <a href="#" class="footer__menu-link">Личный кабинет</a>
+                            <div class="footer__menu-col">
+                                <a href="#" class="footer__menu-link">Главная</a>
+                                <a href="#" class="footer__menu-link">Программы</a>
+                                <a href="#" class="footer__menu-link">Тренировки</a>
+                            </div>
+                            <div class="footer__menu-col">
+                                <a href="#" class="footer__menu-link">Меню</a>
+                                <a href="#" class="footer__menu-link">Калькулятор БЖУ</a>
+                                <a href="#" class="footer__menu-link">О нас</a>
+                            </div>
+                           <div class="footer__menu-col">
+                               <a href="#" class="footer__menu-link">Личный кабинет</a>
+                           </div>
                         </div>
                     </div>
                     <div class="footer__col">
                         <div class="footer__menu-title">Помошь</div>
-                        <div class="footer__menu-grid">
-                            <a href="#" class="footer__menu-link">Забыли пароль?</a>
-                        </div>
+                        <a href="#" class="footer__menu-link">Забыли пароль?</a>
                     </div>
                 </div>
                 <div class="footer-bottom">

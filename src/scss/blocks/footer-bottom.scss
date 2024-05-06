@@ -1,0 +1,31 @@
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  font-size: clamp(8px, 0.314rem + 0.571vw, 16px);
+  align-items: center;
+  
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+
+  &__copyright {
+  }
+
+  &__rights-wrapper {
+    display: flex;
+    grid-gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+    font-size: clamp(7px, 0.275rem + 0.5vw, 14px);
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__link {
+
+  }
+}

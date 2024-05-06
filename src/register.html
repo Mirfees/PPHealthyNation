@@ -1,0 +1,65 @@
+@@include("templates/head.html", {
+"title":"Регистрация"
+})
+
+<body>
+    <main>
+        <section class="auth-block">
+            <div class="auth-block__grid">
+                <div class="auth-block__col" style="background-image: url('../img/reg-bg.png');">
+                    <div class="overlay"></div>
+                </div>
+                <div class="auth-block__col">
+                    <div class="auth-block__form">
+                        <div class="auth-block__title">
+                            Зарегистрируйтесь
+                        </div>
+                        <form class="auth-form" action="">
+                            <div class="auth-form__row">
+                                <div class="auth-form__label">Имя Фамилия</div>
+                                <input name="name" type="text" class="auth-form__input" placeholder="Алибек Алибек Бебеков" required>
+                            </div>
+
+                            <div class="auth-form__row">
+                                <div class="auth-form__label">Номер телефона</div>
+                                <input name="phone" type="tel" class="auth-form__input" placeholder="+7 777 777 77 77" required>
+                            </div>
+
+                            <div class="auth-form__row">
+                                <div class="auth-form__label">Почта</div>
+                                <input name="email" type="email" class="auth-form__input" placeholder="Example@mail.ru" required>
+                            </div>
+
+                            <div class="auth-form__row">
+                                <div class="auth-form__label">Выберите ваш город</div>
+                                <select name="city" id="">
+                                    <option selected value="astana">Астана</option>
+                                    <option value="pavlodar">Павлодар</option>
+                                </select>
+                            </div>
+
+                            <div class="auth-form__row">
+                                <div class="auth-form__label">Придумайте пароль</div>
+                                <input name="password_1" type="password" class="auth-form__input" placeholder="******" required>
+                            </div>
+
+                            <div class="auth-form__row">
+                                <div class="auth-form__label">Подтвердите пароль</div>
+                                <input name="password_2" type="password" class="auth-form__input" placeholder="******" required>
+                            </div>
+
+                            <div class="auth-form__row">
+                                captcha
+                            </div>
+
+                            <div class="auth-form__row">
+                                <button class="auth-form__button button" type="submit">Зарегистрироваться</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

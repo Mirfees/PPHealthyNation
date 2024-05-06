@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     //begin sliders
-
-
-
     const mainSlider = new Swiper('.hero__swiper', {
         // Optional parameters
         loop: true,
@@ -23,7 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev',
         },
     });
-
-
     //end sliders
+
+    //begin BURGER-MENU
+    let burgerMenu = document.getElementById('burger-menu');
+    let overlay = document.querySelector('.header-menu');
+    burgerMenu.addEventListener('click',function(){
+        this.classList.toggle("close");
+        overlay.classList.toggle("overlay");
+    });
+    //end BURGER-MENU
 });

@@ -1,5 +1,6 @@
 .about-us {
   &__container {
+    margin-bottom: clamp(52px, 2.02rem + 3.786vw, 105px);
   }
 
   &__wrapper {
@@ -20,6 +21,10 @@
   }
 
   &__col {
+    &:last-child {
+      display: grid;
+      gap: clamp(15px, 0.589rem + 1.071vw, 30px);
+    }
 
   }
 
@@ -46,23 +51,65 @@
   }
 
   &__text {
+    &_bold {
+      font-weight: 600;
+    }
   }
 
   &__row {
+    display: grid;
+    grid-template-columns: 203px auto;
+    gap: clamp(10px, 0.393rem + 0.714vw, 20px);
+    align-items: center;
   }
 
   &__image-group {
+    img {
+      &:not(:first-child) {
+        margin-left: -39px;
+      }
+    }
   }
 
   &__image {
   }
 
   &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    p {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      color: #8D8D8D;
+
+      &:before {
+        content: '';
+        width: 41px;
+        height: 1px;
+        background: $textColor;
+        opacity: 50%;
+        margin-bottom: 10px;
+      }
+    }
   }
 
   &__title-advantages {
+    font-size: clamp(15px, 0.589rem + 1.071vw, 30px);
+    font-weight: 700;
+    line-height: 120%;
+
+    span {
+      color:#8BC348;
+    }
   }
 
   &__image-wrapper {
+    img {
+      border-radius: 10px;
+      background-color: #8BC348;
+    }
   }
 }

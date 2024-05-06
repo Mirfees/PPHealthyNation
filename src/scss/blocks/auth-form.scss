@@ -1,0 +1,47 @@
+.auth-form {
+  display: grid;
+  grid-gap: 20px;
+  width: 700px;
+
+  @media (max-width: 1600px) {
+    width: 100%;
+    padding-right: clamp(20px, 0.786rem + 1.429vw, 40px);
+  }
+
+  &__row {
+  }
+
+  &__label {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+
+  &__input,
+  input[type='text'],
+  input[type='tel'],
+  button,
+  select{
+    height: unset;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    border: 1px solid #B4BDC3;
+    border-radius: 10px;
+    padding: 18px 20px;
+    width: 100%;
+
+    @media (max-width: 1000px) {
+      color: #fff;
+    }
+  }
+
+  &__button {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+
+}

@@ -1,0 +1,51 @@
+.auth-block {
+  &__grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: auto;
+      color: #fff;
+    }
+  }
+
+  &__col {
+    &:first-child {
+      background-repeat: no-repeat;
+      background-size: cover;
+      @media (max-width: 1000px) {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+      }
+    }
+
+    &:last-child {
+      @media (max-width: 1000px) {
+        position: absolute;
+        width: 100%;
+      }
+    }
+
+    .overlay {
+      @media (max-width: 1000px) {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .5);
+      }
+    }
+  }
+
+  &__title {
+    font-size: clamp(20px, 0.786rem + 1.429vw, 40px);
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: clamp(20px, 0.786rem + 1.429vw, 40px);
+  }
+
+  &__form {
+    margin-left: clamp(20px, 0.786rem + 1.429vw, 40px);
+  }
+}

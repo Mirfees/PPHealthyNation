@@ -1,0 +1,93 @@
+.footer {
+  &__container {
+    background-color: #111A20;
+    color: #fff;
+  }
+
+  &__wrapper {
+    padding-bottom: 135px;
+    padding-top: 65px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 50% 26% auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #888;
+
+    @media (max-width: 1600px) {
+      grid-template-columns: 45% 30% auto;
+    }
+    @media (max-width: 1200px) {
+      grid-template-columns: auto;
+      grid-gap: 40px;
+    }
+  }
+
+  &__col {
+    &:first-child {
+      display: grid;
+      align-content: space-between;
+      gap: clamp(60px, 2.357rem + 4.286vw, 120px);
+    }
+    &:last-child {
+      justify-self: center;
+
+      @media (max-width: 1200px) {
+        justify-self: start;
+      }
+    }
+  }
+
+  &__logo {
+    display: grid;
+    grid-template-columns: 108px auto;
+    align-items: center;
+    grid-gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+  }
+
+  &__logo-wrapper {
+  }
+
+  &__text {
+    font-size: clamp(8px, 0.314rem + 0.571vw, 16px);
+    line-height: 110%;
+    opacity: 0.7;
+    max-width: 467px;
+  }
+
+  &__media-wrapper {
+    display: flex;
+    gap: clamp(10px, 0.393rem + 0.714vw, 20px);
+    align-items: center;
+  }
+
+  &__media-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__phone-number {
+  }
+
+  &__menu-title {
+    font-size: clamp(8px, 0.314rem + 0.571vw, 16px);
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &__menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+  }
+
+  &__menu-col {
+    display: grid;
+    grid-gap: clamp(15px, 0.589rem + 1.071vw, 30px);
+  }
+  &__menu-link {
+    font-size: clamp(7px, 0.275rem + 0.5vw, 14px);
+    white-space: nowrap;
+  }
+}
