@@ -1,0 +1,52 @@
+@@include("templates/head.html", {
+"title":"Логин"
+})
+
+<body>
+<main>
+  <section class="auth-block">
+    <div class="auth-block__grid">
+      <div class="auth-block__col" style="background-image: url('../img/login-bg.png');">
+        <div class="overlay"></div>
+      </div>
+      <div class="auth-block__col">
+        <div class="auth-block__form">
+          <div class="auth-block__title">Добро пожаловать!</div>
+          <div class="auth-block__subtitle">Войдите в свой аккаунт</div>
+          <form class="auth-form" action="">
+            <div class="auth-form__row">
+              <div class="auth-form__input-wrapper auth-form__input-wrapper_type_login">
+                <input name="name" type="text" class="auth-form__input" placeholder="Логин" required>
+              </div>
+            </div>
+
+            <div class="auth-form__row">
+              <div class="auth-form__input-wrapper auth-form__input-wrapper_type_login-password">
+                <input name="password" type="password" class="auth-form__input" placeholder="Пароль" required>
+              </div>
+            </div>
+
+            <div class="auth-form__row auth-form__row_type_login-additional">
+              <div class="auth-form__wrapper">
+                <input class="auth-form__remember-me" type="checkbox" name="remember_me" id="remember_me">
+                <label class="auth-form__remember-me-label" for="remember_me">Запомнить меня</label>
+              </div>
+
+              <a class="auth-form__forget-password" href="#">Забыли пароль?</a>
+            </div>
+
+            <div class="auth-form__row">
+              <button class="auth-form__button button" type="submit">Войти</button>
+            </div>
+
+            <div class="auth-form__row">
+              <a class="auth-form__reg-link" href="#">У вас еще нет учетной записи?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

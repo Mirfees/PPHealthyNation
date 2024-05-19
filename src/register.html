@@ -17,35 +17,48 @@
                         <form class="auth-form" action="">
                             <div class="auth-form__row">
                                 <div class="auth-form__label">Имя Фамилия</div>
-                                <input name="name" type="text" class="auth-form__input" placeholder="Алибек Алибек Бебеков" required>
+                                <div class="auth-form__input-wrapper">
+                                    <input name="name" type="text" class="auth-form__input" placeholder="Алибек Алибек Бебеков" required>
+                                </div>
                             </div>
 
                             <div class="auth-form__row">
                                 <div class="auth-form__label">Номер телефона</div>
-                                <input name="phone" type="tel" class="auth-form__input" placeholder="+7 777 777 77 77" required>
+                                <div class="auth-form__input-wrapper">
+                                    <input name="phone" type="tel" class="auth-form__input" placeholder="+7 777 777 77 77" required>
+                                </div>
                             </div>
 
                             <div class="auth-form__row">
                                 <div class="auth-form__label">Почта</div>
-                                <input name="email" type="email" class="auth-form__input" placeholder="Example@mail.ru" required>
+                                <div class="auth-form__input-wrapper">
+                                    <input name="email" type="email" class="auth-form__input" placeholder="Example@mail.ru" required>
+                                </div>
                             </div>
 
                             <div class="auth-form__row">
                                 <div class="auth-form__label">Выберите ваш город</div>
-                                <select name="city" id="">
-                                    <option selected value="astana">Астана</option>
-                                    <option value="pavlodar">Павлодар</option>
-                                </select>
+                                <div class="auth-form__input-wrapper auth-form__input-wrapper_type_select">
+                                    <select name="city" id="">
+                                        <option selected value="astana">Астана</option>
+                                        <option value="pavlodar">Павлодар</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="auth-form__row">
                                 <div class="auth-form__label">Придумайте пароль</div>
-                                <input name="password_1" type="password" class="auth-form__input" placeholder="******" required>
+                                <div class="auth-form__input-wrapper auth-form__input-wrapper_type_password">
+                                    <input name="password_1" type="password" class="auth-form__input " placeholder="******" required>
+                                </div>
+
                             </div>
 
                             <div class="auth-form__row">
                                 <div class="auth-form__label">Подтвердите пароль</div>
-                                <input name="password_2" type="password" class="auth-form__input" placeholder="******" required>
+                                <div class="auth-form__input-wrapper auth-form__input-wrapper_type_password">
+                                    <input name="password_2" type="password" class="auth-form__input auth-form__input_type_password" placeholder="******" required>
+                                </div>
                             </div>
 
                             <div class="auth-form__row">

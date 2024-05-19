@@ -9,6 +9,22 @@
   }
 
   &__row {
+    &_type {
+      &_login-additional {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  &__remember-me {
+
+  }
+
+  &__remember-me-label {
+    font-size: 14px;
+    font-weight: 500;
   }
 
   &__label {
@@ -18,29 +34,95 @@
     margin-bottom: 10px;
   }
 
+  &__input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #B4BDC3;
+    border-radius: 10px;
+    &_type {
+      &_password {
+        &:after {
+          position: absolute;
+          right: 0;
+          content: url("../img/eye-slash.svg");
+          padding-right: 20px;
+          padding-left: 10px;
+        }
+      }
+
+      &_select {
+        &:after {
+          position: absolute;
+          right: 0;
+          content: url("../img/arrow-down.svg");
+          padding-right: 20px;
+          padding-left: 10px;
+        }
+      }
+
+      &_login {
+        input {
+          padding-left: 60px!important;
+        }
+        &:before {
+          position: absolute;
+          left: 0;
+          content: url("../img/user-icon.svg");
+          padding-left: 20px;
+        }
+      }
+
+      &_login-password {
+        input {
+          padding-left: 60px;
+        }
+        &:before {
+          position: absolute;
+          left: 0;
+          content: url("../img/lock-icon.svg");
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
   &__input,
   input[type='text'],
   input[type='tel'],
-  button,
   select{
     height: unset;
     font-size: 18px;
     font-weight: 500;
     line-height: 120%;
-    border: 1px solid #B4BDC3;
-    border-radius: 10px;
-    padding: 18px 20px;
+    border: none;
+    padding: clamp(9px, 0.354rem + 0.643vw, 18px) clamp(10px, 0.393rem + 0.714vw, 20px);
     width: 100%;
 
     @media (max-width: 1000px) {
       color: #fff;
+      border-color: #fff;
     }
+  }
+
+  &__reg-link,
+  &__forget-password {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
   }
 
   &__button {
     font-size: 18px;
     font-weight: 600;
     line-height: 120%;
+    width: 100%;
+    border-radius: 8px;
+
+    @media (max-width: 1000px) {
+      border-color: #fff;
+    }
   }
 
 
