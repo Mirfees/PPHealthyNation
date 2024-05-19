@@ -1,0 +1,14 @@
+.optimal-program {
+  max-width: 848px;
+  padding: 30px;
+  border-radius: 18px;
+
+  &__title {
+    margin-bottom: clamp(20px, 0.786rem + 1.429vw, 40px);
+  }
+
+  .program-card__wrapper {
+    background-image: none;
+    height: auto;
+  }
+}

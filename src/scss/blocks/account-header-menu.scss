@@ -1,0 +1,54 @@
+.account-header-menu {
+  &__wrapper {
+    border-radius: 8px;
+    box-shadow: 0px 3px 21px 5px rgba(219,219,219,1);
+
+  }
+
+  &__green-block {
+    height: 102px;
+    background-color: $accentColor;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  &__user {
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: block;
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9499A1;
+
+    &:hover,
+    &.active {
+      color: $accentColor;
+      border-bottom: $accentColor solid 2px;
+      margin-bottom: -2px;
+    }
+  }
+
+  &__menu {
+
+  }
+
+  &__menu-wrapper {
+    padding: 0 32px;
+  }
+
+  &__user-wrapper {
+    padding: 0 32px;
+    border-bottom: 1px solid #DEE2E6;
+    padding-bottom: 30px;
+    max-width: 1320px;
+  }
+}

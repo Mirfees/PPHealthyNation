@@ -1,0 +1,83 @@
+.user-card {
+  &__wrapper {
+    display: flex;
+    align-items: end;
+    gap: 25px;
+    margin-top: -70px;
+  }
+
+  &__img {
+    position: relative;
+    width: 174px;
+    height: 184px;
+
+    img {
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
+  &__photo-icon {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__name-wrapper {
+    font-weight: 500;
+
+    span {
+      font-size: 10px;
+      text-align: center;
+      padding: 4px 14px;
+      background-color: #C5E2A3;
+      border-radius: 14px;
+
+    }
+  }
+
+  &__name {
+  }
+
+  &__time {
+    color: #9499A1;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__contacts-wrapper {
+    display: flex;
+    gap: 34px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9499A1;
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    &:before {
+      content: url("../img/account-location.svg");
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    &:before {
+      content: url("../img/account-call.svg");
+      height: 15px;
+      width: 15px;
+    }
+  }
+}

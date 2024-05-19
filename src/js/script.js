@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
+    //plugins begin
     const lazyLoadInstance = new LazyLoad({
         // Your custom settings go here
     });
+
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+    //plugins end
 
     //begin sliders
     const mainSlider = new Swiper('.hero__swiper', {

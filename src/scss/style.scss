@@ -1,4 +1,3 @@
-@import "plugins/fancybox";
 @import "plugins/swiper-bundle.min";
 
 @import "reset";
@@ -24,6 +23,13 @@
 @import "blocks/footer";
 @import "blocks/footer-bottom";
 @import "blocks/footer-media";
+@import "blocks/optimal-program";
+@import "blocks/account-header";
+@import "blocks/account-header-menu";
+@import "blocks/user-card";
+@import "blocks/breadcrumbs";
+
+
 
 @import "blocks/auth-block";
 @import "blocks/auth-form";

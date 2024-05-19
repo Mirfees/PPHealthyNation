@@ -55,6 +55,12 @@
     margin-bottom: clamp(20px, 0.786rem + 1.429vw, 40px);;
   }
 
+  &__subtitle-sm {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: clamp(15px, 0.589rem + 1.071vw, 30px);
+  }
+
   &__form {
     margin-left: clamp(20px, 0.786rem + 1.429vw, 40px);
   }

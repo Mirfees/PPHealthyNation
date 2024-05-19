@@ -367,9 +367,68 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div style="display: none" class="hidden">
+                                <div class="optimal-program" id="optimal_program">
+                                    <div class="optimal-program__title title-h2">Ваша оптимальная <br> программа</div>
+                                    <div class="program-card program-card_type_fat">
+                                        <form method="post" action="" class="program-card__form">
+                                            <div class="program-card__wrapper">
+                                                <div class="program-card__info">
+                                                    <div class="program-card__title title-h3">Энергия и Здоровье</div>
+                                                    <p class="program-card__desc italic">Наши рационы питания обеспечат ваш организм необходимым количеством белков, жиров и углеводов для поддержания активности и эффективных тренировок на протяжении всего периода программы.</p>
+                                                </div>
+                                                <div class="program-card__days-wrapper">
+                                                    <p class="program-card__days-title">
+                                                        Выберите количество дней:
+                                                    </p>
+                                                    <div class="program-card__days">
+                                                        <label for="days_energy_7">
+                                                            <input hidden="" type="radio" name="days" id="days_energy_7" value="7">
+                                                            <div class="program-card__days-text">
+                                                                <span>7 дней</span>
+                                                            </div>
+                                                        </label>
+                                                        <label for="days_energy_14">
+                                                            <input hidden="" type="radio" name="days" id="days_energy_14" value="14">
+                                                            <div class="program-card__days-text">
+                                                                <span>14 дней</span>
+                                                            </div>
+                                                        </label>
+                                                        <label for="days_energy_21">
+                                                            <input hidden="" type="radio" name="days" id="days_energy_21" value="21">
+                                                            <div class="program-card__days-text">
+                                                                <span>21 дней</span>
+                                                            </div>
+                                                        </label>
+                                                        <label for="days_energy_31">
+                                                            <input hidden="" type="radio" name="days" id="days_energy_31" value="31">
+                                                            <div class="program-card__days-text">
+                                                                <span>31 дней</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="program-card__calories-wrapper">
+                                                    <p class="program-card__calories-title italic">Выберите калораж:</p>
+                                                    <div class="program-card__calories-values">
+                                                        <input type="radio" name="calories" id="calories_energy_1" value="1200">
+                                                        <label for="calories_energy_1">1200</label>
+                                                        <input type="radio" name="calories" id="calories_energy_2" value="1500">
+                                                        <label for="calories_energy_2">1500</label>
+                                                        <input type="radio" name="calories" id="calories_energy_3" value="1700">
+                                                        <label for="calories_energy_3">1700</label>
+                                                    </div>
+                                                </div>
+                                                <button class="program-card__button button">Купить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                         <div class="calculator__button-wrapper">
-                            <a href="javascript:;" class="calculator__button button">Рассчитать оптимальную программу</a>
+                            <a data-fancybox data-src="#optimal_program" href="javascript:;" class="calculator__button button">Рассчитать оптимальную программу</a>
                         </div>
                     </div>
                 </div>
