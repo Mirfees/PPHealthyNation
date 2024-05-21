@@ -1,0 +1,35 @@
+.profile-consultation {
+  &__wrapper {
+    height: 605px;
+    overflow-y: scroll;
+    padding: clamp(15px, 0.589rem + 1.071vw, 30px);
+    border-radius: 8px;
+    box-shadow: -13px 15px 24px 0px rgb(224, 224, 224);
+  }
+
+  &__title {
+    font-size: clamp(12px, 0.611rem + 0.429vw, 18px);
+    font-weight: 600;
+    margin-bottom: clamp(10px, 0.323rem + 0.929vw, 23px);
+  }
+
+  &__img {
+    width: clamp(246px, 9.664rem + 17.571vw, 492px);
+    height: clamp(212px, 8.352rem + 15.071vw, 423px);
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__button-wrapper {
+  }
+
+  &__button {
+    width: 100%;
+    font-size: clamp(8px, 0.314rem + 0.571vw, 16px);
+    padding: 10px 0;
+  }
+}

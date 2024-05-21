@@ -1,0 +1,106 @@
+.settings {
+  &__container {
+    margin-bottom: 120px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(12px, 0.471rem + 0.857vw, 24px);
+  }
+
+  &__wrapper {
+    padding: clamp(15px, 0.589rem + 1.071vw, 30px);
+    border-radius: 8px;
+    box-shadow: -13px 15px 24px 0px rgb(224, 224, 224);
+    max-width: 1300px;
+  }
+
+  &__title {
+    font-size: clamp(12px, 0.657rem + 0.286vw, 16px);
+    font-weight: 500;
+    margin-bottom: clamp(12px, 0.471rem + 0.857vw, 24px);
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    font-weight: 500;
+    gap: 5px;
+
+    span {
+      color: #E11D48;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    display: flex;
+    gap: clamp(10px, 0.393rem + 0.714vw, 20px);
+
+    &_type {
+      &_select {
+        &:after {
+          position: absolute;
+          right: 0;
+          content: url("../img/arrow-down.svg");
+          padding-right: clamp(10px, 0.393rem + 0.714vw, 20px);
+          top: clamp(0px, -0.232rem + 0.714vw, 10px);
+        }
+      }
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: auto 65.65%;
+  }
+
+  &__inputs-container {
+  }
+
+  &__input {
+
+  }
+
+  input,
+  select {
+    width: 100%;
+    height: unset;
+    border: 1px solid #DEE2E6;
+    border-radius: 6px;
+    padding: clamp(5px, 0.196rem + 0.357vw, 10px);
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+  }
+
+  &__select {
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__button-container {
+
+  }
+
+  &__button {
+    border: unset;
+    color: #6C757D;
+    background-color: #E9ECEF;
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    padding: 7px 17px;
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  &__submit-button {
+  }
+
+  &__cancel-button {
+  }
+}

@@ -1,0 +1,19 @@
+.profile {
+  &__container {
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+    margin-bottom: clamp(35px, 1.236rem + 2.929vw, 76px);
+
+    @media (max-width:1876px) {
+      grid-template-columns: auto auto;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: auto;
+    }
+  }
+}

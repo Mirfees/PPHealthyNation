@@ -1,0 +1,69 @@
+.constructor {
+  &__container {
+  }
+
+  &__wrapper {
+  }
+
+  &__trial-title {
+    font-size: clamp(15px, 0.589rem + 1.071vw, 30px);
+    font-weight: 700;
+  }
+
+  &__title {
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 256px auto 552px;
+    grid-gap: 40px;
+  }
+
+  &__aside {
+  }
+
+  &__select-wrapper {
+  }
+
+  &__select {
+  }
+
+  &__filter-wrapper {
+    padding: clamp(15px, 0.589rem + 1.071vw, 30px);
+    border-radius: 8px;
+    box-shadow: -13px 15px 24px 0px rgb(224, 224, 224);
+  }
+
+  &__filter {
+  }
+
+  &__filter-title {
+  }
+
+  &__row {
+  }
+
+  &__check {
+  }
+
+  &__check-label {
+  }
+
+  &__catalog {
+  }
+
+  &__search-wrapper {
+  }
+
+  &__search-input {
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  &__pagination {
+  }
+}

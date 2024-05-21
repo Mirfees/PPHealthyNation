@@ -1,7 +1,7 @@
 .account-header-menu {
   &__wrapper {
     border-radius: 8px;
-    box-shadow: 0px 3px 21px 5px rgba(219,219,219,1);
+    box-shadow: -13px 15px 24px 0px rgba(224,224,224,1);
 
   }
 
@@ -16,7 +16,11 @@
 
   &__list {
     display: flex;
-    gap: 30px;
+    gap: clamp(15px, 0.589rem + 1.071vw, 30px);
+
+    @media (max-width: 890px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -24,8 +28,8 @@
 
   &__link {
     display: block;
-    padding: 16px 0;
-    font-size: 16px;
+    padding: clamp(12px, 0.657rem + 0.286vw, 16px) 0;
+    font-size: clamp(12px, 0.657rem + 0.286vw, 16px);
     font-weight: 500;
     color: #9499A1;
 
@@ -42,13 +46,13 @@
   }
 
   &__menu-wrapper {
-    padding: 0 32px;
+    padding: 0 clamp(16px, 0.629rem + 1.143vw, 32px);
   }
 
   &__user-wrapper {
-    padding: 0 32px;
+    padding: 0 clamp(16px, 0.629rem + 1.143vw, 32px);
     border-bottom: 1px solid #DEE2E6;
-    padding-bottom: 30px;
+    padding-bottom: clamp(15px, 0.589rem + 1.071vw, 30px);
     max-width: 1320px;
   }
 }

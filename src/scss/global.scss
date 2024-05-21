@@ -83,6 +83,14 @@ textarea {
   min-height: 88px;
 }
 
+.account-tab {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 @supports(-webkit-appearance: none) or (-moz-appearance: none) {
   input[type='checkbox'],
   input[type='radio'] {

@@ -4,6 +4,11 @@
     align-items: end;
     gap: 25px;
     margin-top: -70px;
+    
+    @media (max-width: 520px) {
+      flex-direction: column;
+      align-items: unset;
+    }
   }
 
   &__img {
@@ -26,35 +31,42 @@
   &__info {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: clamp(12px, 0.471rem + 0.857vw, 24px);
   }
 
   &__name-wrapper {
     font-weight: 500;
-
     span {
       font-size: 10px;
       text-align: center;
       padding: 4px 14px;
-      background-color: #C5E2A3;
       border-radius: 14px;
-
     }
   }
 
   &__name {
+    display: flex;
+    gap: 8px;
+
+    &.full-access span{
+      background-color: #F8E2FF;
+    }
+
+    &.trial span{
+      background-color: #C5E2A3;
+    }
   }
 
   &__time {
     color: #9499A1;
-    font-size: 14px;
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
     font-weight: 500;
   }
 
   &__contacts-wrapper {
     display: flex;
-    gap: 34px;
-    font-size: 14px;
+    gap: clamp(17px, 0.668rem + 1.214vw, 34px);
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
     line-height: 20px;
     color: #9499A1;
   }

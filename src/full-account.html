@@ -1,0 +1,584 @@
+@@include("templates/head.html", {
+"title":"Аккаунт"
+})
+
+<body class="account-tabs-container">
+@@include("templates/account-header.html",{
+    "accountType":"Вкус и польза",
+    "accountTypeClass":"full-access"
+})
+<main>
+
+    <section class="profile account-tab" id="profile">
+        <div class="profile__container">
+            <div class="container">
+                <div class="profile__wrapper">
+                    <form class="profile-settings">
+                        <div class="profile-settings__wrapper">
+                            <div class="profile-settings__title">Общие настройки</div>
+                            <div class="profile-settings__list">
+                                <div class="profile-settings__item">
+                                    <div class="profile-settings__input-wrapper">
+                                        <div class="profile-settings__label">Почта</div>
+                                        <input type="email" name="email" placeholder="Alibek@mail.ru" class="profile-settings__input">
+                                    </div>
+                                    <div class="profile-settings__button-wrapper">
+                                        <button class="profile-settings__button">Изменить</button>
+                                    </div>
+                                </div>
+
+                                <div class="profile-settings__item">
+                                    <div class="profile-settings__input-wrapper">
+                                        <div class="profile-settings__label">Пароль</div>
+                                        <input type="password" name="password" placeholder="********" class="profile-settings__input">
+                                    </div>
+                                    <div class="profile-settings__button-wrapper">
+                                        <button class="profile-settings__button">Изменить</button>
+                                    </div>
+                                </div>
+
+                                <div class="profile-settings__item">
+                                    <div class="profile-settings__input-wrapper">
+                                        <div class="profile-settings__label">Номер телефона</div>
+                                        <input type="tel" name="tel" placeholder="+7-777-777-77-77" class="profile-settings__input">
+                                    </div>
+                                    <div class="profile-settings__button-wrapper">
+                                        <button class="profile-settings__button">Изменить</button>
+                                    </div>
+                                </div>
+
+                                <div class="profile-settings__item">
+                                    <div class="profile-settings__input-wrapper">
+                                        <div class="profile-settings__label">Адрес доставки</div>
+                                        <input type="text" name="address" placeholder="Ул.Пушкина 52, кв 10" class="profile-settings__input">
+                                    </div>
+                                    <div class="profile-settings__button-wrapper">
+                                        <button class="profile-settings__button">Изменить</button>
+                                    </div>
+                                </div>
+
+                                <div class="profile-settings__item">
+                                    <div class="profile-settings__input-wrapper">
+                                        <div class="profile-settings__label">Программа</div>
+                                        <select name="programm" id="" class="profile-settings__select">
+                                            <option selected value="default">Вкус и польза</option>
+                                        </select>
+                                    </div>
+                                    <div class="profile-settings__button-wrapper">
+                                        <button class="profile-settings__button">Изменить</button>
+                                    </div>
+                                </div>
+
+                                <div class="profile-settings__item">
+                                    <div class="profile-settings__input-wrapper">
+                                        <div class="profile-settings__label">Количество дней</div>
+                                        <select name="programm" id="" class="profile-settings__select">
+                                            <option selected value="7">7 дней</option>
+                                            <option value="14">14 дней</option>
+                                            <option value="21">21 день</option>
+                                            <option value="31">31 день</option>
+                                        </select>
+                                    </div>
+                                    <div class="profile-settings__button-wrapper">
+                                        <button class="profile-settings__button">Изменить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form class="profile-constructor">
+                        <div class="profile-constructor__wrapper">
+                            <div class="profile-constructor__title">Конструктор меню</div>
+                            <div class="profile-constructor__item unavailable">
+                                <div class="profile-constructor__date-wrapper">
+                                    <div class="profile-constructor__day-of-week">Понедельник</div>
+                                    <div class="profile-constructor__date">12.04.24</div>
+                                </div>
+                                <div class="profile-constructor__chosen-wrapper">
+                                    <div class="profile-constructor__menu-title">Недоступно</div>
+                                    <ul class="profile-constructor__chosen-list">
+                                        <li class="profile-constructor__chosen-item">Завтрак</li>
+                                        <li class="profile-constructor__chosen-item">Обед</li>
+                                        <li class="profile-constructor__chosen-item">Ужин</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-constructor__button-wrapper">
+                                    <button class="profile-constructor__button" disabled>Недоступно</button>
+                                </div>
+                            </div>
+
+                            <div class="profile-constructor__item chosen">
+                                <div class="profile-constructor__date-wrapper">
+                                    <div class="profile-constructor__day-of-week">Вторник</div>
+                                    <div class="profile-constructor__date">13.04.24</div>
+                                </div>
+                                <div class="profile-constructor__chosen-wrapper">
+                                    <div class="profile-constructor__menu-title">Выбрано</div>
+                                    <ul class="profile-constructor__chosen-list">
+                                        <li class="profile-constructor__chosen-item">Завтрак</li>
+                                        <li class="profile-constructor__chosen-item">Обед</li>
+                                        <li class="profile-constructor__chosen-item">Ужин</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-constructor__button-wrapper">
+                                    <button class="profile-constructor__button" disabled>Изменить</button>
+                                </div>
+                            </div>
+
+                            <div class="profile-constructor__item chose-await">
+                                <div class="profile-constructor__date-wrapper">
+                                    <div class="profile-constructor__day-of-week">Вторник</div>
+                                    <div class="profile-constructor__date">13.04.24</div>
+                                </div>
+                                <div class="profile-constructor__chosen-wrapper">
+                                    <div class="profile-constructor__menu-title">Выберите 3 блюда</div>
+                                    <ul class="profile-constructor__chosen-list">
+                                        <li class="profile-constructor__chosen-item">Завтрак</li>
+                                        <li class="profile-constructor__chosen-item">Обед</li>
+                                        <li class="profile-constructor__chosen-item">Ужин</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-constructor__button-wrapper">
+                                    <button class="profile-constructor__button" disabled>Выбрать</button>
+                                </div>
+                            </div>
+
+                            <div class="profile-constructor__item chose-await">
+                                <div class="profile-constructor__date-wrapper">
+                                    <div class="profile-constructor__day-of-week">Вторник</div>
+                                    <div class="profile-constructor__date">13.04.24</div>
+                                </div>
+                                <div class="profile-constructor__chosen-wrapper">
+                                    <div class="profile-constructor__menu-title">Выберите 3 блюда</div>
+                                    <ul class="profile-constructor__chosen-list">
+                                        <li class="profile-constructor__chosen-item">Завтрак</li>
+                                        <li class="profile-constructor__chosen-item">Обед</li>
+                                        <li class="profile-constructor__chosen-item">Ужин</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-constructor__button-wrapper">
+                                    <button class="profile-constructor__button" disabled>Выбрать</button>
+                                </div>
+                            </div>
+
+                            <div class="profile-constructor__item chose-await">
+                                <div class="profile-constructor__date-wrapper">
+                                    <div class="profile-constructor__day-of-week">Вторник</div>
+                                    <div class="profile-constructor__date">13.04.24</div>
+                                </div>
+                                <div class="profile-constructor__chosen-wrapper">
+                                    <div class="profile-constructor__menu-title">Выберите 3 блюда</div>
+                                    <ul class="profile-constructor__chosen-list">
+                                        <li class="profile-constructor__chosen-item">Завтрак</li>
+                                        <li class="profile-constructor__chosen-item">Обед</li>
+                                        <li class="profile-constructor__chosen-item">Ужин</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-constructor__button-wrapper">
+                                    <button class="profile-constructor__button" disabled>Выбрать</button>
+                                </div>
+                            </div>
+
+                            <div class="profile-constructor__item chose-await">
+                                <div class="profile-constructor__date-wrapper">
+                                    <div class="profile-constructor__day-of-week">Вторник</div>
+                                    <div class="profile-constructor__date">13.04.24</div>
+                                </div>
+                                <div class="profile-constructor__chosen-wrapper">
+                                    <div class="profile-constructor__menu-title">Выберите 3 блюда</div>
+                                    <ul class="profile-constructor__chosen-list">
+                                        <li class="profile-constructor__chosen-item">Завтрак</li>
+                                        <li class="profile-constructor__chosen-item">Обед</li>
+                                        <li class="profile-constructor__chosen-item">Ужин</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-constructor__button-wrapper">
+                                    <button class="profile-constructor__button" disabled>Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="profile-my-orders">
+                        <div class="profile-my-orders__wrapper">
+                            <div class="profile-my-orders__title">Мои заказы</div>
+                            <div class="profile-my-orders__item status-waiting">
+                                <div class="profile-my-orders__date-wrapper">
+                                    <div class="profile-my-orders__date">12.03.24, 13:00</div>
+                                    <ul class="profile-my-orders__status"><li>Ожидается</li></ul>
+                                </div>
+                                <div class="profile-my-orders__order-wrapper">
+                                    <div class="profile-my-orders__order-label">Номер Заказа:</div>
+                                    <div class="profile-my-orders__order-number">37-00-2622</div>
+                                </div>
+                                <div class="profile-my-orders__button-wrapper">
+                                    <button class="profile-my-orders__button">Детали</button>
+                                </div>
+                            </div>
+                            <div class="profile-my-orders__item status-deliver">
+                                <div class="profile-my-orders__date-wrapper">
+                                    <div class="profile-my-orders__date">12.03.24, 13:00</div>
+                                    <ul class="profile-my-orders__status"><li>В пути</li></ul>
+                                </div>
+                                <div class="profile-my-orders__order-wrapper">
+                                    <div class="profile-my-orders__order-label">Номер Заказа:</div>
+                                    <div class="profile-my-orders__order-number">37-00-2622</div>
+                                </div>
+                                <div class="profile-my-orders__button-wrapper">
+                                    <button class="profile-my-orders__button">Детали</button>
+                                </div>
+                            </div>
+                            <div class="profile-my-orders__item status-completed">
+                                <div class="profile-my-orders__date-wrapper">
+                                    <div class="profile-my-orders__date">12.03.24, 13:00</div>
+                                    <ul class="profile-my-orders__status"><li>Выполнен</li></ul>
+                                </div>
+                                <div class="profile-my-orders__order-wrapper">
+                                    <div class="profile-my-orders__order-label">Номер Заказа:</div>
+                                    <div class="profile-my-orders__order-number">37-00-2622</div>
+                                </div>
+                                <div class="profile-my-orders__button-wrapper">
+                                    <button class="profile-my-orders__button">Детали</button>
+                                </div>
+                            </div>
+                            <div class="profile-my-orders__item status-completed">
+                                <div class="profile-my-orders__date-wrapper">
+                                    <div class="profile-my-orders__date">12.03.24, 13:00</div>
+                                    <ul class="profile-my-orders__status"><li>Выполнен</li></ul>
+                                </div>
+                                <div class="profile-my-orders__order-wrapper">
+                                    <div class="profile-my-orders__order-label">Номер Заказа:</div>
+                                    <div class="profile-my-orders__order-number">37-00-2622</div>
+                                </div>
+                                <div class="profile-my-orders__button-wrapper">
+                                    <button class="profile-my-orders__button">Детали</button>
+                                </div>
+                            </div>
+                            <div class="profile-my-orders__item status-completed">
+                                <div class="profile-my-orders__date-wrapper">
+                                    <div class="profile-my-orders__date">12.03.24, 13:00</div>
+                                    <ul class="profile-my-orders__status"><li>Выполнен</li></ul>
+                                </div>
+                                <div class="profile-my-orders__order-wrapper">
+                                    <div class="profile-my-orders__order-label">Номер Заказа:</div>
+                                    <div class="profile-my-orders__order-number">37-00-2622</div>
+                                </div>
+                                <div class="profile-my-orders__button-wrapper">
+                                    <button class="profile-my-orders__button">Детали</button>
+                                </div>
+                            </div>
+                            <div class="profile-my-orders__item status-completed">
+                                <div class="profile-my-orders__date-wrapper">
+                                    <div class="profile-my-orders__date">12.03.24, 13:00</div>
+                                    <ul class="profile-my-orders__status"><li>Выполнен</li></ul>
+                                </div>
+                                <div class="profile-my-orders__order-wrapper">
+                                    <div class="profile-my-orders__order-label">Номер Заказа:</div>
+                                    <div class="profile-my-orders__order-number">37-00-2622</div>
+                                </div>
+                                <div class="profile-my-orders__button-wrapper">
+                                    <button class="profile-my-orders__button">Детали</button>
+                                </div>
+                            </div>
+                            <div class="profile-my-orders__item status-completed">
+                                <div class="profile-my-orders__date-wrapper">
+                                    <div class="profile-my-orders__date">12.03.24, 13:00</div>
+                                    <ul class="profile-my-orders__status"><li>Выполнен</li></ul>
+                                </div>
+                                <div class="profile-my-orders__order-wrapper">
+                                    <div class="profile-my-orders__order-label">Номер Заказа:</div>
+                                    <div class="profile-my-orders__order-number">37-00-2622</div>
+                                </div>
+                                <div class="profile-my-orders__button-wrapper">
+                                    <button class="profile-my-orders__button">Детали</button>
+                                </div>
+                            </div>
+                            <div class="profile-my-orders__item status-completed">
+                                <div class="profile-my-orders__date-wrapper">
+                                    <div class="profile-my-orders__date">12.03.24, 13:00</div>
+                                    <ul class="profile-my-orders__status"><li>Выполнен</li></ul>
+                                </div>
+                                <div class="profile-my-orders__order-wrapper">
+                                    <div class="profile-my-orders__order-label">Номер Заказа:</div>
+                                    <div class="profile-my-orders__order-number">37-00-2622</div>
+                                </div>
+                                <div class="profile-my-orders__button-wrapper">
+                                    <button class="profile-my-orders__button">Детали</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="constructor account-tab active" id="constructor">
+        <div class="constructor__container">
+            <div class="container">
+                <div class="constructor__wrapper">
+                    <div class="constructor__title title-h1">Соберите свое меню</div>
+                    <div class="constructor__content">
+                        <form class="constructor__aside">
+                            <div class="constructor__select-wrapper">
+                                <select name="" id="" class="constructor__select">
+                                    <option value="default" disabled selected>Выберите день недели</option>
+                                    <option value="1">Понедельник</option>
+                                </select>
+                            </div>
+                            <div class="constructor__filter-wrapper">
+                                <div class="constructor__filter-title">Фильтр</div>
+                                <div class="constructor__filter">
+                                    <div class="constructor__row">
+                                        <input type="checkbox" id="val_1" class="constructor__check">
+                                        <label for="val_1" class="constructor__check-label">Завтрак</label>
+                                    </div>
+                                    <div class="constructor__row">
+                                        <input type="checkbox" id="val_2" class="constructor__check">
+                                        <label for="val_2" class="constructor__check-label">Обед</label>
+                                    </div>
+                                    <div class="constructor__row">
+                                        <input type="checkbox" id="val_3" class="constructor__check">
+                                        <label for="val_3" class="constructor__check-label">Ужин</label>
+                                    </div>
+                                    <div class="constructor__row">
+                                        <input type="checkbox" id="val_4" class="constructor__check">
+                                        <label for="val_4" class="constructor__check-label">Перекусы</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="constructor__catalog">
+                            <div class="constructor__search-wrapper">
+                                <input type="text" class="constructor__search-input">
+                            </div>
+                            <div class="constructor__cards">
+                                <div class="dish-card">
+                                    <div class="dish-card__wrapper">
+                                        <a href="#" class="dish-card__image">
+                                            <img src="" alt="">
+                                        </a>
+                                        <div class="dish-card__content">
+                                            <div class="dish-card__title"></div>
+                                            <div class="dish-card__desc"></div>
+                                            <a href="javascript" class="dish-card__button">Добавить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dish-card">
+                                    <div class="dish-card__wrapper">
+                                        <a href="#" class="dish-card__image">
+                                            <img src="" alt="">
+                                        </a>
+                                        <div class="dish-card__content">
+                                            <div class="dish-card__title"></div>
+                                            <div class="dish-card__desc"></div>
+                                            <a href="javascript" class="dish-card__button">Добавить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dish-card">
+                                    <div class="dish-card__wrapper">
+                                        <a href="#" class="dish-card__image">
+                                            <img src="" alt="">
+                                        </a>
+                                        <div class="dish-card__content">
+                                            <div class="dish-card__title"></div>
+                                            <div class="dish-card__desc"></div>
+                                            <a href="javascript" class="dish-card__button">Добавить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dish-card">
+                                    <div class="dish-card__wrapper">
+                                        <a href="#" class="dish-card__image">
+                                            <img src="" alt="">
+                                        </a>
+                                        <div class="dish-card__content">
+                                            <div class="dish-card__title"></div>
+                                            <div class="dish-card__desc"></div>
+                                            <a href="javascript" class="dish-card__button">Добавить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dish-card">
+                                    <div class="dish-card__wrapper">
+                                        <a href="#" class="dish-card__image">
+                                            <img src="" alt="">
+                                        </a>
+                                        <div class="dish-card__content">
+                                            <div class="dish-card__title"></div>
+                                            <div class="dish-card__desc"></div>
+                                            <a href="javascript" class="dish-card__button">Добавить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dish-card">
+                                    <div class="dish-card__wrapper">
+                                        <a href="#" class="dish-card__image">
+                                            <img src="" alt="">
+                                        </a>
+                                        <div class="dish-card__content">
+                                            <div class="dish-card__title"></div>
+                                            <div class="dish-card__desc"></div>
+                                            <a href="javascript" class="dish-card__button">Добавить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="constructor__pagination">
+                                @@include('templates/pagination.html')
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <form class="cart__wrapper">
+                                <div class="cart__title">Вторник, 2 мая</div>
+                                <div class="cart__address-wrapper">
+                                    <div class="cart__address-label">Адрес доставки</div>
+                                    <div class="cart__address">Ул. Пушкина 56</div>
+                                </div>
+                                <div class="cart__products">
+                                    <div class="cart__item">
+                                        <div class="cart__image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="cart__info">
+                                            <div class="cart__product-name">Гречневая каша с йогуртом и ягодами</div>
+                                            <div class="cart__product-type">Завтрак</div>
+                                        </div>
+                                        <div class="cart__delete-button-wrapper">
+                                            <a href="javascript:;" class="cart__delete-button"></a>
+                                        </div>
+                                    </div>
+                                    <div class="cart__item">
+                                        <div class="cart__image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="cart__info">
+                                            <div class="cart__product-name">Гречневая каша с йогуртом и ягодами</div>
+                                            <div class="cart__product-type">Завтрак</div>
+                                        </div>
+                                        <div class="cart__delete-button-wrapper">
+                                            <a href="javascript:;" class="cart__delete-button"></a>
+                                        </div>
+                                    </div>
+                                    <div class="cart__item">
+                                        <div class="cart__image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="cart__info">
+                                            <div class="cart__product-name">Гречневая каша с йогуртом и ягодами</div>
+                                            <div class="cart__product-type">Завтрак</div>
+                                        </div>
+                                        <div class="cart__delete-button-wrapper">
+                                            <a href="javascript:;" class="cart__delete-button"></a>
+                                        </div>
+                                    </div>
+                                    <div class="cart__item">
+                                        <div class="cart__image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="cart__info">
+                                            <div class="cart__product-name">Гречневая каша с йогуртом и ягодами</div>
+                                            <div class="cart__product-type">Завтрак</div>
+                                        </div>
+                                        <div class="cart__delete-button-wrapper">
+                                            <a href="javascript:;" class="cart__delete-button"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <textarea hidden="" name="" id="" cols="30" rows="10"></textarea>
+                                <div class="cart__button-wrapper">
+                                    <button class="cart__button">Отправить заказ</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trainings account-tab" id="trainings">
+        <div class="trainings__container">
+            <div class="container">
+                <div class="trainings__wrapper">
+                    <div class="trainings__trial-title">Тренировки недоступны в пробном периоде</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="consultations account-tab" id="consultations">
+        <div class="consultations__container">
+            <div class="container">
+                <div class="consultations__wrapper">
+                    <div class="consultations__trial-title">Консультации недоступны в пробном периоде</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="settings account-tab" id="settings">
+        <div class="settings__container">
+            <div class="container">
+                <form class="settings__wrapper">
+                    <div class="settings__title">Общие настройки</div>
+                    <div class="settings__content">
+                        <div class="settings__row">
+                            <div class="settings__label">Имя, Фамилия <span>*</span></div>
+                            <div class="settings__input-wrapper">
+                                <input name="first_input" type="text" class="settings__input" placeholder="Алибек" required>
+                                <input name="last_input" type="text" class="settings__input" placeholder="Алибеков" required>
+                            </div>
+                        </div>
+                        <div class="settings__row">
+                            <div class="settings__label">Номер телефона <span>*</span></div>
+                            <div class="settings__input-wrapper">
+                                <input name="phone" type="tel" class="settings__input" placeholder="+7 (777) 777 77 77" required>
+                            </div>
+                        </div>
+                        <div class="settings__row">
+                            <div class="settings__label">Адрес доставки <span>*</span></div>
+                            <div class="settings__input-wrapper">
+                                <input name="adderss" type="tel" class="settings__input" placeholder="Ул Пушкина" required>
+                            </div>
+                        </div>
+                        <div class="settings__row">
+                            <div class="settings__label">Пароль <span>*</span></div>
+                            <div class="settings__input-wrapper">
+                                <input name="password" type="password" class="settings__input" placeholder="*******" required>
+                            </div>
+                        </div>
+                        <div class="settings__row">
+                            <div class="settings__label">Новый пароль</div>
+                            <div class="settings__input-wrapper">
+                                <input name="password_change_1" type="password" class="settings__input" placeholder="********">
+                                <input name="password_change_2" type="password" class="settings__input" placeholder="Подтвердите новый пароль">
+                            </div>
+                        </div>
+                        <div class="settings__row">
+                            <div class="settings__label">Программа</div>
+                            <div class="settings__input-wrapper settings__input-wrapper_type_select">
+                                <select class="settings__select" name="programs">
+                                    <option value="1">Вкус и польза</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="settings__buttons-wrapper">
+                            <div class="settings__button-container">
+                                <a href="javascript:;" class="settings__button settings__cancel-button button">Отменить</a>
+                                <button type="submit" class="settings__button settings__submit-button button">Сохранить изменения</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('templates/scripts.html')
+</body>
+</html>

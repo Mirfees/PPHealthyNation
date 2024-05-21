@@ -16,9 +16,9 @@
 @import "blocks/calculator";
 @import "blocks/calculator-card";
 @import "blocks/personal-account";
-@import "blocks/trainings";
-@import "blocks/trainings-card";
-@import "blocks/trainings-aside";
+@import "blocks/main-page-trainings";
+@import "blocks/main-page-trainings-card";
+@import "blocks/main-page-trainings-aside";
 @import "blocks/about-us";
 @import "blocks/footer";
 @import "blocks/footer-bottom";
@@ -28,8 +28,17 @@
 @import "blocks/account-header-menu";
 @import "blocks/user-card";
 @import "blocks/breadcrumbs";
-
-
+@import "blocks/profile";
+@import "blocks/profile-constructor";
+@import "blocks/profile-consultation";
+@import "blocks/profile-settings";
+@import "blocks/trainings";
+@import "blocks/constructor";
+@import "blocks/consultations";
+@import "blocks/settings";
+@import "blocks/profile-my-orders";
+@import "blocks/dish-card";
+@import "blocks/cart";
 
 @import "blocks/auth-block";
 @import "blocks/auth-form";

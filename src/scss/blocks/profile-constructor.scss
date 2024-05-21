@@ -1,0 +1,179 @@
+.profile-constructor {
+  &__wrapper {
+    height: 605px;
+    overflow-y: scroll;
+    padding: clamp(15px, 0.589rem + 1.071vw, 30px);
+    border-radius: 8px;
+    box-shadow: -13px 15px 24px 0px rgb(224, 224, 224);
+  }
+
+  &__title {
+    font-size: clamp(12px, 0.611rem + 0.429vw, 18px);
+    font-weight: 600;
+    margin-bottom: clamp(10px, 0.323rem + 0.929vw, 23px);
+  }
+
+  &__chosen-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: clamp(10px, 0.393rem + 0.714vw, 20px);
+    border-top: 1px dashed #DEE2E6;
+    border-bottom: 1px dashed #DEE2E6;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 23% auto auto;
+    margin-bottom: clamp(10px, 0.393rem + 0.714vw, 20px);
+
+    &.disabled {
+      color: #c8c8c8;
+      .profile-constructor {
+        &__day-of-week {
+          color: #c8c8c8;
+        }
+        &__chosen-wrapper {
+          border-top: unset;
+          border-bottom: unset;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 35% auto auto;
+
+    }
+  }
+
+  &__date-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    padding: clamp(10px, 0.393rem + 0.714vw, 20px);
+  }
+
+  &__day-of-week {
+    font-weight: 500;
+    color: #3D475C;
+  }
+
+  &__date {
+  }
+
+  &__menu-title {
+    font-size: clamp(8px, 0.314rem + 0.571vw, 16px);
+    font-weight: 500;
+  }
+
+  &__chosen-list {
+    display: flex;
+    @media (max-width: 520px) {
+      flex-direction: column;
+    }
+  }
+
+  &__chosen-item {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    color: #9499A1;
+    padding-right: clamp(5px, 0.196rem + 0.357vw, 10px);
+
+    &::marker {
+      color: $accentColor;
+    }
+  }
+
+  &__button-wrapper {
+    padding: clamp(10px, 0.393rem + 0.714vw, 20px);
+    border-bottom: 1px dashed #DEE2E6;;
+    border-top: 1px dashed #DEE2E6;;
+    border-right: 1px dashed #DEE2E6;;
+    border-radius: 0 8px 8px 0 ;
+  }
+
+  &__button {
+    padding: clamp(5px, 0.196rem + 0.357vw, 10px) clamp(8px, 0.314rem + 0.571vw, 16px);
+    border-radius: 50px;
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+  }
+
+  &__disabled-dishes {
+    font-size: clamp(8px, 0.314rem + 0.571vw, 16px);
+  }
+
+  .unavailable {
+    .profile-constructor {
+      &__button {
+        background-color: #C4C4C4;
+        color: #fff;
+      }
+
+      &__chosen-item {
+        list-style-type: disc;
+        list-style-position: inside;
+        font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+        color: #9499A1;
+        padding-right: clamp(5px, 0.196rem + 0.357vw, 10px);
+
+        &::marker {
+          color: #9499A1;
+        }
+      }
+
+      &__menu-title {
+        color: #979797;
+      }
+    }
+  }
+
+  .chosen {
+    .profile-constructor {
+      &__button {
+        background-color: #FFEBE2;
+      }
+
+      &__chosen-item {
+        list-style-type: disc;
+        list-style-position: inside;
+        font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+        color: #9499A1;
+        padding-right: clamp(5px, 0.196rem + 0.357vw, 10px);
+
+        &::marker {
+          color: $accentColor;
+        }
+      }
+
+      &__menu-title {
+        color: $accentColor;
+      }
+    }
+  }
+
+  .chose-await {
+    .profile-constructor {
+      &__button {
+        background-color: #E2FFE5;
+      }
+
+      &__chosen-item {
+        list-style-type: disc;
+        list-style-position: inside;
+        font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+        color: #9499A1;
+        padding-right: clamp(5px, 0.196rem + 0.357vw, 10px);
+
+        &::marker {
+          color: #9499A1;
+        }
+      }
+
+      &__menu-title {
+        color: #3D475C;
+      }
+    }
+  }
+}
