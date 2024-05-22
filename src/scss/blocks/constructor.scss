@@ -3,6 +3,7 @@
   }
 
   &__wrapper {
+    margin-bottom: clamp(25px, 0.982rem + 1.786vw, 50px);
   }
 
   &__trial-title {
@@ -11,33 +12,61 @@
   }
 
   &__title {
+    margin-bottom: clamp(20px, 0.786rem + 1.429vw, 40px);
   }
 
   &__content {
     display: grid;
-    grid-template-columns: 256px auto 552px;
-    grid-gap: 40px;
+    grid-template-columns: 14.7% auto 31.8%;
+    grid-gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+    
+    @media (max-width: 1500px) {
+      grid-template-columns: 14.7% auto 21.8%;
+    }
+
+    @media (max-width: 1500px) {
+      grid-template-columns: auto;
+    }
   }
 
   &__aside {
   }
 
   &__select-wrapper {
+    margin-bottom: clamp(20px, 0.786rem + 1.429vw, 40px);
+    text-align: center;
+    border: 1px solid #48874E;
+    border-radius: 8px;
   }
 
   &__select {
+    padding: clamp(10px, 0.393rem + 0.714vw, 20px) 0;
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    font-weight: 500;
   }
 
   &__filter-wrapper {
+    height: 787px;
     padding: clamp(15px, 0.589rem + 1.071vw, 30px);
     border-radius: 8px;
     box-shadow: -13px 15px 24px 0px rgb(224, 224, 224);
+
+    @media (max-width: 1200px) {
+      height: auto;
+    }
   }
 
   &__filter {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(12px, 0.471rem + 0.857vw, 24px);
+    font-size: clamp(12px, 0.657rem + 0.286vw, 16px);
   }
 
   &__filter-title {
+    font-size: clamp(14px, 0.782rem + 0.286vw, 18px);
+    font-weight: 500;
+    margin-bottom: clamp(12px, 0.471rem + 0.857vw, 24px);
   }
 
   &__row {
@@ -50,18 +79,42 @@
   }
 
   &__catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__search-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: clamp(20px, 0.786rem + 1.429vw, 40px);
+    &:before {
+      content: url("../img/search-icon.svg");
+      margin-right: clamp(10px, 0.393rem + 0.714vw, 20px);
+    }
+
+    input {
+      width: 100%;
+      padding: unset;
+      border: unset;
+
+      font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+      font-weight: 500;
+    }
   }
 
   &__search-input {
+
   }
 
   &__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+    
+    @media (max-width: 1500px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__pagination {

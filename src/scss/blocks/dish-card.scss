@@ -1,19 +1,43 @@
 .dish-card {
   &__wrapper {
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
   }
 
   &__image {
+    display: flex;
+    img {
+      border-radius: 8px 8px 0 0;
+      object-fit: cover;
+      width: 100%;
+    }
   }
 
   &__content {
+    padding: clamp(8px, 0.314rem + 0.571vw, 16px) clamp(10px, 0.393rem + 0.714vw, 20px) clamp(12px, 0.402rem + 1.071vw, 27px) clamp(10px, 0.393rem + 0.714vw, 20px);
   }
 
   &__title {
+    margin-bottom: 10px;
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    color: #000;
   }
 
   &__desc {
+    margin-bottom: clamp(8px, 0.338rem + 0.5vw, 15px);
+    font-size: clamp(9px, 0.493rem + 0.214vw, 12px);
   }
 
   &__button {
+    padding: clamp(4px, 0.157rem + 0.286vw, 8px) clamp(17px, 0.645rem + 1.286vw, 35px);
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1px solid $accentColor;
+    color: $accentColor;
+
+    &:hover {
+      border: 1px solid $accentColor;
+    }
   }
 }

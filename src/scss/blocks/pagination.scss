@@ -1,0 +1,37 @@
+.pagination {
+  &__wrapper {
+    width: fit-content;
+  }
+
+  &__list {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__previous,
+  &__item,
+  &__next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+  }
+
+  &__item {
+    border-radius: 4px;
+
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+
+    &.active,
+    &:hover {
+      background-color: $accentColor;
+      color: #fff;
+    }
+  }
+
+  &__next {
+  }
+}

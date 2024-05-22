@@ -1,38 +1,74 @@
 .cart {
   &__wrapper {
+    padding: clamp(20px, 0.786rem + 1.429vw, 40px) clamp(15px, 0.589rem + 1.071vw, 30px);
+    border-radius: 8px;
+    box-shadow: -13px 15px 24px 0px rgb(224, 224, 224);
   }
 
   &__title {
+    margin-bottom: clamp(10px, 0.393rem + 0.714vw, 20px);
+    font-size: clamp(14px, 0.62rem + 0.786vw, 25px);
+    font-weight: 700;
   }
 
   &__address-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: clamp(15px, 0.589rem + 1.071vw, 30px);
   }
 
   &__address-label {
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    font-weight: 500;
   }
 
   &__address {
+    font-size: clamp(10px, 0.393rem + 0.714vw, 20px);
+    font-weight: 600;
   }
 
   &__products {
+    margin-bottom: clamp(15px, 0.589rem + 1.071vw, 30px);
   }
 
   &__item {
+    display: grid;
+    grid-template-columns: 85px auto auto;
+    gap: clamp(10px, 0.393rem + 0.714vw, 20px);
+    padding: clamp(15px, 0.589rem + 1.071vw, 30px) 0;
+    border-top: 1px solid #e0e0e0;
   }
 
   &__image {
+    width: 85px;
+    height: 85px;
+    img {
+      object-fit: cover;
+    }
   }
 
   &__info {
+    padding: 8px 0;
   }
 
   &__product-name {
+    font-size: clamp(10px, 0.393rem + 0.714vw, 20px);
+    font-weight: 500;
   }
 
   &__product-type {
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    font-weight: 400;
   }
 
   &__delete-button-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__textarea-hidden {
+    display: none;
   }
 
   &__delete-button {
@@ -42,5 +78,6 @@
   }
 
   &__button {
+    width: 100%;
   }
 }
