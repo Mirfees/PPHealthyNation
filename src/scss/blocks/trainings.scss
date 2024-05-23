@@ -9,4 +9,48 @@
     font-size: clamp(15px, 0.589rem + 1.071vw, 30px);
     font-weight: 700;
   }
+
+  &__tabs-wrapper {
+    display: flex;
+    gap: clamp(10px, 0.393rem + 0.714vw, 20px);
+    margin-bottom: clamp(15px, 0.589rem + 1.071vw, 30px);
+    flex-wrap: wrap;
+  }
+
+  &__tab {
+  }
+
+  &__tab-link {
+    font-size: clamp(10px, 0.439rem + 0.571vw, 18px);
+    font-style: italic;
+    padding: clamp(8px, 0.314rem + 0.571vw, 16px) clamp(30px, 1.248rem + 1.929vw, 57px);
+
+    &:hover,
+    &.active {
+      background-color: #2D404E;
+      border-color: #2D404E;
+    }
+  }
+
+  &__content {
+    margin-bottom: clamp(30px, 1.179rem + 2.143vw, 60px);
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 520px) {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__pagination {
+    margin-bottom: clamp(25px, 0.982rem + 1.786vw, 50px);
+  }
 }

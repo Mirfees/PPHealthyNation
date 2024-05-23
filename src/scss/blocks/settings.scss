@@ -3,17 +3,35 @@
     margin-bottom: 120px;
   }
 
-  &__content {
+  &__settings-content,
+  &__program-content{
     display: flex;
     flex-direction: column;
     gap: clamp(12px, 0.471rem + 0.857vw, 24px);
+    border-radius: 8px;
+    box-shadow: -13px 15px 24px 0px rgb(224, 224, 224);
+    padding: clamp(15px, 0.589rem + 1.071vw, 30px);
+  }
+
+  &__program-content {
   }
 
   &__wrapper {
-    padding: clamp(15px, 0.589rem + 1.071vw, 30px);
-    border-radius: 8px;
-    box-shadow: -13px 15px 24px 0px rgb(224, 224, 224);
-    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 74.9% auto;
+    gap: clamp(20px, 0.786rem + 1.429vw, 40px);
+
+    @media (max-width: 1400px) {
+      grid-template-columns: 70% auto;
+    }
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 65% auto;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: auto;
+    }
   }
 
   &__title {
@@ -44,9 +62,9 @@
         &:after {
           position: absolute;
           right: 0;
-          content: url("../img/arrow-down.svg");
+          content: url("../img/account-arrow-down.svg");
           padding-right: clamp(10px, 0.393rem + 0.714vw, 20px);
-          top: clamp(0px, -0.232rem + 0.714vw, 10px);
+          top: 5px;
         }
       }
     }
@@ -80,10 +98,17 @@
   &__buttons-wrapper {
     display: flex;
     justify-content: end;
+    @media (max-width: 350px) {
+      justify-content: center;
+    }
   }
 
   &__button-container {
-
+    @media (max-width: 350px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__button {
@@ -102,5 +127,59 @@
   }
 
   &__cancel-button {
+  }
+
+  &__program-content {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  &__program-title {
+    font-size: clamp(12px, 0.657rem + 0.286vw, 16px);
+    font-weight: 600;
+  }
+
+  &__program-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__program-row {
+    display: flex;
+    justify-content: space-between;
+    padding: clamp(10px, 0.393rem + 0.714vw, 20px) 0;
+    border-bottom: 1px solid #DEE2E6;
+  }
+
+  &__program-label {
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    font-weight: 400;
+  }
+
+  &__program-val {
+    font-size: clamp(10px, 0.532rem + 0.286vw, 14px);
+    font-weight: 500;
+  }
+
+  &__program-banner {
+    height: 204px;
+    background-color: #FFF5DB;
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @media (max-width: 1000px) {
+        height: 50%;
+      }
+    }
+  }
+
+  &__program-banner-title {
+    padding: clamp(10px, 0.393rem + 0.714vw, 20px);
+    font-size: clamp(10px, 0.393rem + 0.714vw, 20px);
+    font-style: italic;
+    font-weight: 600;
   }
 }
