@@ -61,6 +61,16 @@ img {
   object-fit: cover;
 }
 
+.fixed-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 input[type='text'],
 input[type='tel'],
 textarea {

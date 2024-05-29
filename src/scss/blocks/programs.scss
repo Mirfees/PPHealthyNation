@@ -32,8 +32,8 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: clamp(20px, 0.786rem + 1.429vw, 43px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: clamp(5px, 0.196rem + 0.357vw, 10px);
 
     @media (max-width: 890px) {
       grid-template-columns: auto;

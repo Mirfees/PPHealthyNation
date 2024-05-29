@@ -1,9 +1,11 @@
 .main-page-trainings-aside {
+  display: none;
   &__form {
     display: flex;
     flex-direction: column;
     gap: clamp(15px, 0.589rem + 1.071vw, 30px);
     padding: clamp(20px, 0.786rem + 1.429vw, 40px);
+    max-width: 848px;
     border-radius: clamp(12px, 0.471rem + 0.857vw, 24px);
     background-color: #48874E;
     color: #fff;

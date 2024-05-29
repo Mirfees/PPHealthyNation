@@ -3,18 +3,16 @@
     &_harmony {
       .program-card__wrapper {
         background-color: #C5E2A3;
-        background-image: url(../img/woman-1.png), url(../img/mask-bg-1.png);
-        background-repeat: no-repeat ,no-repeat;
-        background-position: bottom right, bottom center;
-        background-size: auto, contain;
-        height: 1096px;
+        background-image: url(../img/woman-1.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 283px;
 
         @media (max-width: 1700px) {
           background-size: 70%, auto;
         }
 
         @media (max-width: 1500px) {
-          height: 796px;
           background-size: 48%, auto;
         }
 
@@ -35,10 +33,8 @@
         background-repeat: no-repeat;
         background-position: bottom center;
         background-size: contain;
-        height: 869px;
 
         @media (max-width: 1500px) {
-          height: 596px;
         }
 
         @media (max-width: 890px) {
@@ -57,11 +53,9 @@
         background-image: url(../img/salad-2.png), url(../img/mask-bg-3.png);
         background-repeat: no-repeat ,no-repeat;
         background-position: bottom right, bottom center;
-        background-size: auto, contain;
-        height: 869px;
+        background-size: 300px, cover;
 
         @media (max-width: 1500px) {
-          height: 596px;
           background-size: 48%, auto;
         }
 
@@ -81,15 +75,13 @@
         background-image: url(../img/woman-2.png), url(../img/mask-bg-1.png);
         background-repeat: no-repeat ,no-repeat;
         background-position: bottom right, bottom center;
-        background-size: auto, contain;
-        height: 1096px;
+        background-size: 44%, cover;
 
         @media (max-width: 1700px) {
           background-size: 70%, auto;
         }
 
         @media (max-width: 1500px) {
-          height: 796px;
           background-size: 48%, auto;
         }
 
@@ -113,13 +105,14 @@
     gap: clamp(15px, 0.589rem + 1.071vw, 30px);
     padding: clamp(20px, 0.786rem + 1.429vw, 40px);
     border-radius: clamp(12px, 0.471rem + 0.857vw, 24px);
+    padding-bottom: clamp(80px, 3.143rem + 5.714vw, 160px);
   }
 
   &__info {
   }
 
   &__title {
-    margin-bottom: clamp(10px, 0.393rem + 0.714vw, 20px);
+
   }
 
   &__desc {
@@ -200,8 +193,8 @@
   }
 
   &__button {
-    font-size: clamp(13px, 0.511rem + 0.929vw, 26px);
-    width: 374px;
+    font-size: clamp(11px, 0.432rem + 0.786vw, 22px);
+    width: 240px;
 
     @media (max-width: 900px) {
       width: 100%;

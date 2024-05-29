@@ -12,8 +12,8 @@
 
   &__grid {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: clamp(20px, 0.786rem + 1.429vw, 40px);
-    grid-template-columns: auto 40.33%;
 
     @media (max-width: 1400px) {
       grid-template-columns: auto 33.33%;

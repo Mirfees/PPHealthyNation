@@ -29,11 +29,23 @@
         }
       }
     }
+
+    &_home {
+      .trainings-card__wrapper {
+        background-image: url("../img/woman-3.png");
+
+        @media (max-width: 700px) {
+          background-image: unset;
+        }
+      }
+    }
   }
   &__wrapper {
+    height: 100%;
+    padding: clamp(20px, 0.786rem + 1.429vw, 40px);
     background-repeat: no-repeat;
     background-position: bottom right;
-    padding: clamp(20px, 0.786rem + 1.429vw, 40px);
+    background-size: contain;
     border-radius: clamp(12px, 0.471rem + 0.857vw, 24px);
 
     @media (max-width: 1700px) {
@@ -49,7 +61,6 @@
     display: flex;
     flex-direction: column;
     gap: clamp(15px, 0.589rem + 1.071vw, 30px);
-    max-width: 485px;
 
     @media (max-width: 1400px) {
       max-width: 470px;
@@ -78,6 +89,7 @@
   &__text-wrapper {
     display: flex;
     flex-direction: column;
+    max-width: 485px;
     gap: clamp(10px, 0.393rem + 0.714vw, 20px);
   }
 
