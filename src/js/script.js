@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Optional parameters
         loop: true,
         spaceBetween: 20,
+        autoplay: true,
 
         // If we need pagination
         pagination: {
@@ -21,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
     });
     //end sliders
 

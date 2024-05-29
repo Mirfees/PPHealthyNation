@@ -4,13 +4,18 @@
   }
 
   &__grid {
-    display: grid;
-    grid-template-columns: auto 40.33%;
-    grid-gap: clamp(10px, -0.071rem + 2.143vw, 40px);
+    position: relative;
+  }
 
-    @media (max-width: 1200px) {
-      grid-template-columns: 100%;
-    }
+  &__text {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    width: 100%;
+    padding-top: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    border-radius: clamp(12px, 0.471rem + 0.857vw, 24px);
   }
 
   &__col {
@@ -20,6 +25,9 @@
     display: grid;
     grid-gap: clamp(10px, -0.071rem + 2.143vw, 40px);
     margin-bottom: clamp(10px, -0.071rem + 2.143vw, 40px);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   &__title {
@@ -30,24 +38,17 @@
   }
 
   &__info-grid {
-    display: grid;
-    grid-template-columns: 3fr 1.4fr;
-    gap: clamp(10px, -0.071rem + 2.143vw, 40px);
-
-    @media (max-width: 1400px) {
-      grid-template-columns: 3fr 2fr;
-    }
-
-    @media (max-width: 768px) {
-      grid-template-columns: auto;
-    }
   }
 
   &__info-col {
+    &_button {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__button {
-    width: 100%;
+    width: 650px;
     text-align: center;
     font-weight: 600;
     padding: clamp(13px, 0.487rem + 1vw, 27px);
@@ -83,6 +84,7 @@
 
   &__discount-wrapper {
     height: 100%;
+    width: 300px;
     padding: 20px 22px;
     background-color: #DBE5FF;
     border-radius: clamp(12px, 0.471rem + 0.857vw, 24px);
@@ -107,8 +109,7 @@
 
   &__swiper {
     position: relative;
-    height: 100%;
-    max-width: 700px;
+    height: 545px;
     border-radius: clamp(12px, 0.471rem + 0.857vw, 24px);
 
     @media (max-width: 1000px) {
@@ -152,9 +153,10 @@
 
   &__swiper-slide>img{
     background-image: url("../img/slide-bg.png");
-    mask-image: url('../img/mask.png');
-    mask-repeat: no-repeat;
-    mask-position: right bottom;
+    width: 100%;
+    //mask-image: url('../img/mask.png');
+    //mask-repeat: no-repeat;
+    //mask-position: right bottom;
     object-fit: cover;
     border-radius: clamp(12px, 0.471rem + 0.857vw, 24px);
   }

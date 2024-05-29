@@ -55,6 +55,10 @@
     @media (max-width: 1200px) {
       background-size: contain;
     }
+
+    @media (max-width: 650px) {
+      background-image: unset!important;
+    }
   }
 
   &__info {
